@@ -1,40 +1,9 @@
-'''99 bottles of beer on the wall, 99 bottles of beer.
-Take one down and pass it around, 98 bottles of beer on the wall.
-
-98 bottles of beer on the wall, 98 bottles of beer.
-Take one down and pass it around, 97 bottles of beer on the wall.
-
-…
-
-1 bottle of beer on the wall, 1 bottle of beer.
-Take one down and pass it around, no more bottles of beer on the wall.
-
-No more bottles of beer on the wall, no more bottles of beer.
-Go to the store and buy some more, 99 bottles of beer on the wall.'''
-
-o=" of beer"
-a="bottle"+o
-a2="bottles"+o
-b='on the wall.'
-#x
-b
-c='Take one down and pass it around,'
-#x
-a2+b[:-1]+"."
-#x
-a2
-b
-#x
-a2+"."
-nm="no more"
-g='Go to the store and buy some more'
-s=str
-for x in range(99, -1,-1):
-    nx=x-1
-    if x==0:
-        x,c,nx=nm,g,99
-    x=nm if x==0 else x
-    
-    print(x,a if x==1 else a2,b[:-1]+',',x,a+'.',c,end=" ")
-    print(nx,a if nx==1 else a2,b)
-
+r,y,o,a,b,c,m=print,-1," of beer","bottle",'on the wall.','Take one down and pass it around,',"more"
+A,k,g=a+"s"+o,"no "+m,'Go to the store and buy some '+m+","
+for x in range(99,y,y):
+ X=k if x==1 else x-1
+ if x==0:
+  x,c,X=k,g,99
+ j=x if type(x)==int else"No "+m
+ r(j,p:=a+o if x==1 else A,b[:y]+',',x,p+'.')
+ r(c,X,a+o if X==1 else A,b+"\n")
