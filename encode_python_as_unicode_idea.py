@@ -1,4 +1,6 @@
-code="print('hello world')"
+code='''print('hello world')'''
+print(len(code))
+input()
 #convert each char in code to 2 hex digits
 code_hex=[hex(ord(i))[2:].zfill(2) for i in code]
 for i in code_hex:
@@ -7,9 +9,9 @@ for i in code_hex:
 hex_2_string = "".join(code_hex)
 print(hex_2_string)
 # convert each 5 hex chars into unicode
-unicode = [chr(int(hex_2_string[j:j+5],16)) for j in range(0,len(hex_2_string),5)]
+unicode = [chr(int(hex_2_string[j:j+5],16)+32) for j in range(0,len(hex_2_string),5)]
 
-print(unicode)
+print("".join(unicode))
 input()
 # unicode back into hex
 unicode_2_hex = "".join([hex(ord(i))[2:].zfill(5) for i in unicode])

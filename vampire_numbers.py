@@ -1,7 +1,7 @@
 from itertools import permutations
 a=''.join
 I=int
-for i in range(1000,939659):
+for i in range(1260,939659):
  j=str(i)
  L=len(j)
  if L%2!=0: continue
