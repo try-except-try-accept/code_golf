@@ -1,6 +1,6 @@
-p,s,n=print,[0],0
+s,n=[0],0
 for i in range(1,1001):
- p(n)
+ print(n)
  j=i-2
  while j!=-1 and s[j]!=n:
   j-=1
